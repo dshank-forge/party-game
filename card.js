@@ -8,3 +8,14 @@ class card {
 myCard = new card("spades", "9");
 console.log(myCard.suit);
 console.log(myCard.value);
+
+// module.exports = {
+//   hello: function () {
+//     return "Hello";
+//   },
+
+// };
+
+module.exports = {
+  card: card,
+};

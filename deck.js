@@ -26,6 +26,17 @@ blueDeck = new deck(true);
 num = blueDeck.drawCard();
 console.log(num);
 
-// console.log("hello " + blueDeck.cards);
+console.log("hello " + blueDeck.cards);
 
-// console.log(blueDeck.isStandard);
+console.log(blueDeck.isStandard);
+
+const myModule = require("./card");
+
+let cardClass = myModule.card;
+
+let myCard = new cardClass("diamonds", 7);
+
+console.log(myCard.value + " of " + myCard.suit);
+
+// let val = myModule.hello();
+// console.log(val);
