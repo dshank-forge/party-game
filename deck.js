@@ -26,9 +26,9 @@ blueDeck = new deck(true);
 num = blueDeck.drawCard();
 console.log(num);
 
-console.log("hello " + blueDeck.cards);
+// console.log("hello " + blueDeck.cards);
 
-console.log(blueDeck.isStandard);
+// console.log(blueDeck.isStandard);
 
 const myModule = require("./card");
 
