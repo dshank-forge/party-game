@@ -1,9 +1,16 @@
-console.log("hello world");
+// console.log("hello world from player.js");
 
 class player {
-  constructor() {
+  constructor(name) {
     console.log("We have created a player.");
+    this.name = name;
   }
 }
 
-john = new player();
+// john = new player("John");
+
+// console.log(john.name);
+
+module.exports = {
+  the_player_class: player,
+};

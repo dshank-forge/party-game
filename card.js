@@ -5,9 +5,12 @@ class card {
   }
 }
 
-myCard = new card("spades", "9");
-console.log(myCard.suit);
-console.log(myCard.value);
+// console.log(available_suits);
+// console.log(available_values);
+
+// myCard = new card("spades", "9");
+// console.log(myCard.suit);
+// console.log(myCard.value);
 
 // module.exports = {
 //   hello: function () {
@@ -17,5 +20,5 @@ console.log(myCard.value);
 // };
 
 module.exports = {
-  card: card,
+  the_card_class: card,
 };
