@@ -4,25 +4,32 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
-rl.question("What is your name ? ", function (name) {
-  rl.question("Where do you live ? ", function (country) {
-    console.log(`${name}, is a citizen of  ${country}`);
-    rl.close();
-  });
-});
+// var outside_name = "hank";
 
-rl.on("close", function () {
-  console.log("\n BYE BYE !!!");
-  process.exit(0);
-});
-
-// var dog_id;
-
-// dog_id = rl.question("What is your dog's name? ", function (dog) {
-//   console.log(dog);
-//   rl.close();
-//   return dog;
+// rl.question("What is your name ? ", function (name) {
+//   rl.question("Where do you live ? ", function (country) {
+//     if (name == outside_name) {
+//       console.log(`${name}, is a citizen of  ${country}`);
+//     }
+//     rl.close();
+//   });
 // });
+
+// rl.on("close", function () {
+//   console.log("\n BYE BYE !!!");
+//   process.exit(0);
+// });
+
+var really_good_dog = "strider";
+
+rl.question("What is your dog's name? ", function (dog) {
+  if (dog == really_good_dog) {
+    console.log(dog + " is a REALLY good doggo!");
+  } else {
+    console.log(dog + " is a good doggo!");
+  }
+  rl.close();
+});
 
 // console.log("This is the dog_id: " + dog_id);
 
